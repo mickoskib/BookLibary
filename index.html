@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+     body {
+      font-family: Arial, sans-serif;
+    }
+
+    #app {
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .genre-list {
+      margin-top: 20px;
+    }
+
+    .genre-list h3 {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h2>Book Tracker</h2>
+        <label for="title">Title:</label>
+        <input type="text" id="booktitle" placeholder="Enter book title">
+    
+        <label for="author">Author:</label>
+        <input type="text" id="author" placeholder="Enter author name">
+    
+        <label for="genres">Genre:</label>
+        <select>
+          <option value="Fantasy" id="fantasy">Fantasy</option>
+          <option value="Romance" id="romance">Romance</option>
+          <option value="Comedy" id="comedy">Comedy</option>
+          <option value="Crime" id="crime">Crime</option>
+        </select>
+    
+        <button id="addbookbutton">Add Book</button>
+    
+        <div class="genre-list">
+          <h3>Fantasy</h3>
+          <ul id="fantasybook"></ul>
+    
+          <h3>Romance</h3>
+          <ul id="romancebook"></ul>
+    
+          <h3>Comedy</h3>
+          <ul id="comedybook"></ul>
+    
+          <h3>Crime</h3>
+          <ul id="crimebook"></ul>
+        </div>
+      </div>
+</body>
+</html>
